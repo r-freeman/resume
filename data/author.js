@@ -12,16 +12,19 @@ export const links = [
     {
         title: "ryanfreeman.dev",
         href: "https://ryanfreeman.dev",
-        icon: (props) => <GlobeIcon {...props}/>
+        icon: (props) => <GlobeIcon {...props}/>,
+        property: "u-url"
     },
     {
         title: "hello@ryanfreeman.dev",
         href: "mailto:hello@ryanfreeman.dev",
-        icon: (props) => <MailIcon {...props}/>
+        icon: (props) => <MailIcon {...props}/>,
+        property: "u-email"
     },
     {
         title: "@r-freeman",
         href: "https://github.com/r-freeman",
-        icon: (props) => <GitHubIcon {...props}/>
+        icon: (props) => <GitHubIcon {...props}/>,
+        property: "u-url"
     }
 ]
