@@ -8,6 +8,7 @@ export default function Header({author, links}) {
             <Head>
                 <title>{author.name} &middot; {author.jobTitle}</title>
                 <link rel="icon" href="/favicon.ico"/>
+                <meta property="description" content={author.bio}/>
             </Head>
             <header className="lg:flex justify-between mt-16">
                 <div className="lg:flex items-center">
