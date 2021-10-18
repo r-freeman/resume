@@ -70,7 +70,7 @@ export default function Home({author, languages, technologies}) {
                                     Maintained composure and professionalism throughout my interactions with customers.
                                 </li>
                                 <li>
-                                    Adapted to the customer, adjusted to their technical skills level and preferred way
+                                    Adapted to the customer, adjusted to their technical skill level and preferred way
                                     of
                                     communicating.
                                 </li>
