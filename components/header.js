@@ -27,20 +27,20 @@ export default function Header({author, links}) {
                         <p className="font-serif text-2xl text-gray-500">{author.jobTitle}</p>
                     </div>
                 </div>
-                <div className="mt-6 font-light text-sm space-y-1">
+                <div className="mt-6 font-light text-base lg:text-sm space-y-1">
                     {author.location &&
                     <p className="flex lg:flex-row-reverse items-center text-gray-500 hover:text-gray-900">
-                        <PinIcon className="w-5 h-5 mr-2 lg:ml-2 lg:mr-0"/>
+                        <PinIcon className="w-6 h-6 lg:w-5 lg:h-5 mr-2 lg:ml-2 lg:mr-0"/>
                         <span>{author.location}</span>
                     </p>
                     }
                     {links.map((link, i) => (
                         <a key={i}
                            href={link.href}
-                           rel="noopener"
-                           target="_blank"
-                           className="flex lg:flex-row-reverse items-center text-gray-500 hover:text-gray-900">
-                            <link.icon className="w-5 h-5 mr-2 lg:ml-2 lg:mr-0"/>
+                           rel=" noopener"
+                           target=" _blank"
+                           className=" flex lg:flex-row-reverse items-center text-gray-500 hover:text-gray-900">
+                            <link.icon className="w-6 h-6 lg:w-5 lg:h-5 mr-2 lg:ml-2 lg:mr-0"/>
                             {link.title}
                         </a>
                     ))}
