@@ -32,6 +32,10 @@ export default function Home({author, languages, technologies}) {
                                     scikit-learn.
                                 </li>
                                 <li>
+                                    Deployed the text classification model to Amazon Web Services as a serverless
+                                    function using AWS Lambda and API Gateway.
+                                </li>
+                                <li>
                                     Developed a real-time messaging system using Twitter API and Sockets.IO which
                                     allowed
                                     agents
