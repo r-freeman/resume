@@ -53,7 +53,7 @@ export default function Home({author, languages, technologies}) {
                             <h3 className="mt-2 font-serif font-bold text-[21px] leading-none">Apple</h3>
                             <p className="mt-2 font-light">
                                 <time dateTime="2014-06">June 2014</time>
-                                &middot;
+                                {' '}&middot;{' '}
                                 <time dateTime="2018-10">October 2018</time>
                             </p>
                             <h4 className="mt-2 font-serif font-bold italic text-[21px]">At Home
@@ -101,7 +101,7 @@ export default function Home({author, languages, technologies}) {
                                 Technology</h3>
                             <p className="mt-1 font-light">
                                 <time dateTime="2017-09">September 2017</time>
-                                &middot;
+                                {' '}&middot;{' '}
                                 <time dateTime="2021-04">April 2021</time>
                             </p>
                             <h4 className="mt-2 font-serif italic">BSc in Creative Computing</h4>
