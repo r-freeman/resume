@@ -8,6 +8,7 @@ export default function Header({author, links}) {
             <Head>
                 <title>{author.name} &middot; {author.jobTitle}</title>
                 <link rel="icon" href="/favicon.ico"/>
+                <meta name="author" content={author.name}/>
                 <meta name="description" content={author.bio}/>
             </Head>
             <header className="h-card lg:flex justify-between mt-16">
