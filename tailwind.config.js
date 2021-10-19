@@ -5,7 +5,7 @@ module.exports = {
     theme: {
         extend: {
             colors: {
-                'han-purple': '#5E17EB'
+                primary: '#5E17EB'
             },
             fontFamily: {
                 'serif': 'Merriweather',

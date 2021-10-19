@@ -18,7 +18,7 @@ export default function Home({author, languages, technologies}) {
                         <p className="font-light leading-7 mt-6">{author.bio}</p>
                     </section>
                     <section className="mb-16">
-                        <h2 className="text-han-purple font-bold uppercase tracking-wider">Projects</h2>
+                        <h2 className="text-primary font-bold uppercase tracking-wider">Projects</h2>
                         <section className="mb-8">
                             <h3 className="mt-2 font-serif font-bold text-[21px] leading-none">Intellagent</h3>
                             <ul className="mt-3 list-disc pl-7 font-light leading-7 space-y-2">
@@ -48,7 +48,7 @@ export default function Home({author, languages, technologies}) {
                         </section>
                     </section>
                     <section className="mb-16">
-                        <h2 className="text-han-purple font-bold uppercase tracking-wider">Experience</h2>
+                        <h2 className="text-primary font-bold uppercase tracking-wider">Experience</h2>
                         <section className="mb-8">
                             <h3 className="mt-2 font-serif font-bold text-[21px] leading-none">Apple</h3>
                             <p className="mt-2 font-light">
@@ -93,7 +93,7 @@ export default function Home({author, languages, technologies}) {
                 </div>
                 <aside>
                     <section className="mb-12">
-                        <h2 className="text-han-purple font-bold uppercase tracking-wider">
+                        <h2 className="text-primary font-bold uppercase tracking-wider">
                             Education
                         </h2>
                         <section>
