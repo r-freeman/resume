@@ -24,8 +24,8 @@ export default function Header({author, links}) {
                             className="u-photo rounded-full"/>
                     </div>
                     <div>
-                        <h1 className="p-name text-4xl font-serif font-bold md:text-5xl leading-tight">{author.name}</h1>
-                        <p className="p-job-title font-serif text-2xl text-gray-500">{author.jobTitle}</p>
+                        <h1 className="p-name text-4xl leading-tight font-serif font-bold md:text-5xl md:leading-tight">{author.name}</h1>
+                        <p className="p-job-title font-serif text-[18px] md:text-2xl text-gray-500">{author.jobTitle}</p>
                     </div>
                 </div>
                 <div className="mt-6 font-light text-base lg:text-sm space-y-1">
