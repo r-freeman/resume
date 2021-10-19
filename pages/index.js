@@ -6,6 +6,7 @@ import {getCustomData} from '../lib/custom';
 export default function Home({author, languages, technologies}) {
     return (
         <div className="container max-w-5xl mx-auto mb-16 px-8 lg:px-16">
+            <div className="absolute inset-0 bg-primary h-32 lg:h-[5px]"/>
             <Header
                 author={author}
                 links={links}/>
