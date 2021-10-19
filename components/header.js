@@ -28,7 +28,7 @@ export default function Header({author, links}) {
                         <p className="p-job-title font-serif text-[18px] md:text-2xl text-gray-600">{author.jobTitle}</p>
                     </div>
                 </div>
-                <div className="mt-6 font-light text-base lg:text-sm space-y-1">
+                <div className="mt-6 text-base lg:text-sm space-y-1">
                     {links.map((link, i) => (
                         <a key={i}
                            href={link.href}

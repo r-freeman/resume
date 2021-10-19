@@ -5,7 +5,7 @@ import {getCustomData} from '../lib/custom';
 
 export default function Home({author, languages, technologies}) {
     return (
-        <div className="container max-w-5xl mx-auto mb-16 px-8 lg:px-16">
+        <div className="container max-w-5xl mx-auto mb-16 px-8 lg:px-16 font-light">
             <div className="absolute inset-0 bg-primary h-32 lg:h-[5px]"/>
             <Header
                 author={author}
@@ -16,13 +16,13 @@ export default function Home({author, languages, technologies}) {
                         <h2 className="font-serif font-bold text-4xl leading-none">
                             About me
                         </h2>
-                        <p className="font-light leading-7 mt-6">{author.bio}</p>
+                        <p className="leading-7 mt-6">{author.bio}</p>
                     </section>
                     <section className="mb-16">
                         <h2 className="text-primary font-bold uppercase tracking-wider">Projects</h2>
                         <section className="mb-8">
                             <h3 className="mt-2 font-serif font-bold text-[21px] leading-none">Intellagent</h3>
-                            <ul className="mt-3 list-disc pl-7 font-light leading-7 space-y-2">
+                            <ul className="mt-3 list-disc pl-7  leading-7 space-y-2">
                                 <li>
                                     Built a full-stack help desk application which used machine learning to
                                     automatically
@@ -52,14 +52,14 @@ export default function Home({author, languages, technologies}) {
                         <h2 className="text-primary font-bold uppercase tracking-wider">Experience</h2>
                         <section className="mb-8">
                             <h3 className="mt-2 font-serif font-bold text-[21px] leading-none">Apple</h3>
-                            <p className="mt-2 font-light">
+                            <p className="mt-2">
                                 <time dateTime="2014-06">June 2014</time>
                                 {' '}&middot;{' '}
                                 <time dateTime="2018-10">October 2018</time>
                             </p>
                             <h4 className="mt-2 font-serif font-bold italic text-[21px]">At Home
                                 Advisor</h4>
-                            <ul className="mt-3 list-disc pl-7 font-light leading-7 space-y-2">
+                            <ul className="mt-3 list-disc pl-7  leading-7 space-y-2">
                                 <li>
                                     Technical support for Apple customers in EMEA, AMR and JAPAC regions.
                                 </li>
@@ -100,13 +100,13 @@ export default function Home({author, languages, technologies}) {
                         <section>
                             <h3 className="mt-1 font-serif font-bold">Institute of Art, Design and
                                 Technology</h3>
-                            <p className="mt-1 font-light">
+                            <p className="mt-1">
                                 <time dateTime="2017-09">September 2017</time>
                                 {' '}&middot;{' '}
                                 <time dateTime="2021-04">April 2021</time>
                             </p>
                             <h4 className="mt-2 font-serif italic">BSc in Creative Computing</h4>
-                            <p className="mt-1 font-light">Award 1:1</p>
+                            <p className="mt-1">Award 1:1</p>
                         </section>
                     </section>
                     {languages &&
