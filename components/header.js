@@ -29,12 +29,6 @@ export default function Header({author, links}) {
                     </div>
                 </div>
                 <div className="mt-6 font-light text-base lg:text-sm space-y-1">
-                    {author.location &&
-                    <p className="flex lg:flex-row-reverse items-center text-gray-500 hover:text-gray-900">
-                        <PinIcon className="w-6 h-6 lg:w-5 lg:h-5 mr-2 lg:ml-2 lg:mr-0"/>
-                        <span className="p-locality">{author.location}</span>
-                    </p>
-                    }
                     {links.map((link, i) => (
                         <a key={i}
                            href={link.href}
