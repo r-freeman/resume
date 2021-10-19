@@ -1,6 +1,5 @@
 import Head from 'next/head';
 import Image from 'next/image';
-import {PinIcon} from '../components/svg';
 import classNames from '../helpers';
 
 export default function Header({author, links}) {
