@@ -6,4 +6,8 @@
     .project ul {
         @apply mt-3 list-disc pl-7 leading-7 space-y-2
     }
+
+    .experience ul {
+        @apply mt-3 list-disc pl-7 leading-7 space-y-2
+    }
 }
