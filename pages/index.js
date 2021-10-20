@@ -1,9 +1,9 @@
-import {Header, List} from '../components';
-import {getAuthorData} from '../lib/author';
+import {Education, Header, List} from '../components';
 import {links} from '../data/author';
-import {getCustomData} from '../lib/custom';
+import {getAuthorData} from '../lib/author';
+import {getCustomData, getCustomMarkdownData} from '../lib/custom';
 
-export default function Home({author, languages, technologies}) {
+export default function Home({author, educationData, languages, technologies}) {
     return (
         <div className="container max-w-5xl mx-auto mb-16 px-8 lg:px-16 font-light">
             <div className="absolute inset-0 bg-primary h-32 lg:h-[5px]"/>
@@ -93,22 +93,9 @@ export default function Home({author, languages, technologies}) {
                     </section>
                 </div>
                 <aside>
-                    <section className="mb-12">
-                        <h2 className="text-primary font-bold uppercase tracking-wider">
-                            Education
-                        </h2>
-                        <section>
-                            <h3 className="mt-1 font-serif font-bold">Institute of Art, Design and
-                                Technology</h3>
-                            <p className="mt-1">
-                                <time dateTime="2017-09">September 2017</time>
-                                {' '}&middot;{' '}
-                                <time dateTime="2021-04">April 2021</time>
-                            </p>
-                            <h4 className="mt-2 font-serif italic">BSc in Creative Computing</h4>
-                            <p className="mt-1">Award 1:1</p>
-                        </section>
-                    </section>
+                    {educationData &&
+                    <Education educationData={educationData}/>
+                    }
                     {languages &&
                     <List heading="Languages" items={languages}/>
                     }
@@ -123,8 +110,16 @@ export default function Home({author, languages, technologies}) {
 
 export async function getStaticProps() {
     const author = await getAuthorData();
+    const educationData = await getCustomMarkdownData('education');
     const languages = getCustomData('languages.json');
     const technologies = getCustomData('technologies.json');
 
-    return {props: {author, languages, technologies}}
+    return {
+        props: {
+            author,
+            educationData,
+            languages,
+            technologies
+        }
+    }
 }

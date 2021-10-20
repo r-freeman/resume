@@ -9,6 +9,8 @@
     "@fontsource/merriweather": "^4.5.1",
     "@fontsource/merriweather-sans": "^4.5.0",
     "@plaiceholder/next": "^2.1.0",
+    "date-fns": "^2.25.0",
+    "gray-matter": "^4.0.3",
     "next": "latest",
     "plaiceholder": "^2.0.1",
     "react": "^17.0.2",
