@@ -1,4 +1,4 @@
-import 'tailwindcss/tailwind.css';
+import '../styles/global.css';
 import '@fontsource/merriweather/400.css';
 import '@fontsource/merriweather/700.css';
 import '@fontsource/merriweather/700-italic.css';

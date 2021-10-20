@@ -2,8 +2,9 @@ import {Education, Header, List} from '../components';
 import {links} from '../data/author';
 import {getAuthorData} from '../lib/author';
 import {getCustomData, getCustomMarkdownData} from '../lib/custom';
+import Projects from '../components/projects';
 
-export default function Home({author, educationData, languages, technologies}) {
+export default function Home({author, educationData, projectData, languages, technologies}) {
     return (
         <div className="container max-w-5xl mx-auto mb-16 px-8 lg:px-16 font-light">
             <div className="absolute inset-0 bg-primary h-32 lg:h-[5px]"/>
@@ -18,36 +19,7 @@ export default function Home({author, educationData, languages, technologies}) {
                         </h2>
                         <p className="leading-7 mt-6">{author.bio}</p>
                     </section>
-                    <section className="mb-16">
-                        <h2 className="text-primary font-bold uppercase tracking-wider">Projects</h2>
-                        <section className="mb-8">
-                            <h3 className="mt-2 font-serif font-bold text-[21px] leading-none">Intellagent</h3>
-                            <ul className="mt-3 list-disc pl-7  leading-7 space-y-2">
-                                <li>
-                                    Built a full-stack help desk application which used machine learning to
-                                    automatically
-                                    triage incoming customer complaints from Twitter.
-                                </li>
-                                <li>
-                                    Developed a custom text classification model using Jupyter Notebook and
-                                    scikit-learn.
-                                </li>
-                                <li>
-                                    Deployed the text classification model to Amazon Web Services as a serverless
-                                    function using AWS Lambda and API Gateway.
-                                </li>
-                                <li>
-                                    Developed a real-time messaging system using Twitter API and Sockets.IO which
-                                    allowed
-                                    agents
-                                    to exchange messages with customers.
-                                </li>
-                                <li>
-                                    Developed an interactive dashboard UI using React and Tailwind CSS.
-                                </li>
-                            </ul>
-                        </section>
-                    </section>
+                    <Projects projectData={projectData}/>
                     <section className="mb-16">
                         <h2 className="text-primary font-bold uppercase tracking-wider">Experience</h2>
                         <section className="mb-8">
@@ -111,6 +83,7 @@ export default function Home({author, educationData, languages, technologies}) {
 export async function getStaticProps() {
     const author = await getAuthorData();
     const educationData = await getCustomMarkdownData('education');
+    const projectData = await getCustomMarkdownData('projects');
     const languages = getCustomData('languages.json');
     const technologies = getCustomData('technologies.json');
 
@@ -118,6 +91,7 @@ export async function getStaticProps() {
         props: {
             author,
             educationData,
+            projectData,
             languages,
             technologies
         }

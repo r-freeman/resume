@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .project ul {
+        @apply mt-3 list-disc pl-7 leading-7 space-y-2
+    }
+}
