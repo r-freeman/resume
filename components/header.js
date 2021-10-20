@@ -10,7 +10,7 @@ export default function Header({author, links}) {
                 <link rel="icon" href="/favicon.ico"/>
                 <meta name="author" content={author.name}/>
                 <meta name="description" content={author.bio}/>
-                <meta property="og:title" content={`${author.name} ${author.jobTitle}`}/>
+                <meta property="og:title" content={`${author.name} ${author.jobTitle} ${author.location}`}/>
                 <meta property="og:description" content={author.bio}/>
                 <meta property="og:image" content={`${author.photo.src}`}/>
             </Head>
