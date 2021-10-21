@@ -18,8 +18,12 @@ export default function Home({author, educationData, projectData, experienceData
                         </h2>
                         <p className="leading-7 mt-6">{author.bio}</p>
                     </section>
+                    {projectData &&
                     <Projects projectData={projectData}/>
+                    }
+                    {experienceData &&
                     <Experience experienceData={experienceData}/>
+                    }
                 </div>
                 <aside>
                     {educationData &&
