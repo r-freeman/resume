@@ -8,7 +8,8 @@ export default function Projects({projectData}) {
                     <h3 className="mt-2 font-serif font-bold text-[21px] leading-none">
                         {project.name}
                     </h3>
-                    <div dangerouslySetInnerHTML={{__html: project.contentHtml}}/>
+                    <div className="markdown"
+                         dangerouslySetInnerHTML={{__html: project.contentHtml}}/>
                 </section>
             ))}
         </section>

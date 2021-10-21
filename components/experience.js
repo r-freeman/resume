@@ -16,7 +16,8 @@ export default function Experience({experienceData}) {
                     <h4 className="mt-2 font-serif font-bold italic text-[21px]">
                         {experience.jobTitle}
                     </h4>
-                    <div dangerouslySetInnerHTML={{__html: experience.contentHtml}}/>
+                    <div className="markdown"
+                         dangerouslySetInnerHTML={{__html: experience.contentHtml}}/>
                 </section>
             ))}
         </section>
