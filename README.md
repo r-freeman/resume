@@ -1,4 +1,4 @@
-![resume](https://user-images.githubusercontent.com/30879081/138321713-6b7bcba2-832f-4f8d-a4de-4907c5e01da4.jpeg)
+![resume](https://user-images.githubusercontent.com/30879081/138473536-f2dc5472-cc1b-4ee1-9c0a-b1ab8fcdbb0d.jpeg)
 
 # Resume
 
