@@ -37,9 +37,9 @@ export default function Header({author, links}) {
                            href={link.href}
                            rel="noopener"
                            target="_blank"
-                           className={classNames(link.property, 'flex lg:flex-row-reverse items-center text-gray-500 hover:text-gray-900')}>
+                           className={classNames(link.property, 'inline-flex lg:flex lg:flex-row-reverse items-center text-gray-500 hover:text-gray-900')}>
                             <link.icon className="w-6 h-6 lg:w-5 lg:h-5 mr-2 lg:ml-2 lg:mr-0"/>
-                            {link.title}
+                            <span className="sr-only lg:not-sr-only">{link.title}</span>
                         </a>
                     ))}
                 </div>

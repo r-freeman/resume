@@ -1,4 +1,10 @@
-import {PinIcon, GlobeIcon, MailIcon, GitHubIcon} from '../components/svg';
+import {
+    PinIcon,
+    GlobeIcon,
+    LinkedInIcon,
+    MailIcon,
+    GitHubIcon
+} from '../components/svg';
 
 export const author = {
     name: "Ryan Freeman",
@@ -28,9 +34,14 @@ export const links = [
         property: "u-email"
     },
     {
-        title: "@r-freeman",
+        title: "GitHub",
         href: "https://github.com/r-freeman",
         icon: (props) => <GitHubIcon {...props}/>,
+        property: "u-url"
+    }, {
+        title: "LinkedIn",
+        href: "https://www.linkedin.com/in/r-freeman/",
+        icon: (props) => <LinkedInIcon {...props}/>,
         property: "u-url"
     }
 ]
