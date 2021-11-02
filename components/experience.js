@@ -2,10 +2,10 @@ import {Datetime} from '../components';
 
 export default function Experience({experienceData}) {
     return (
-        <section className="mb-16">
+        <section className="mb-16 print:mb-8">
             <h2 className="text-primary font-bold uppercase tracking-wider">Experience</h2>
             {experienceData.slice(0).reverse().map(experience => (
-                <section className="experience mb-12"
+                <section className="experience mb-12 print:mb-6"
                          key={experience.id}>
                     <h3 className="mt-2 font-serif font-bold text-[21px] leading-none">{experience.company}</h3>
                     <p className="mt-2">

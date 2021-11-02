@@ -10,6 +10,9 @@ module.exports = {
             fontFamily: {
                 'serif': 'Merriweather',
                 'sans': 'Merriweather Sans'
+            },
+            screens: {
+                'print': {'raw': 'print'}
             }
         },
     },

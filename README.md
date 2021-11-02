@@ -10,7 +10,9 @@ A fully customisable online resume created with [Next.js](https://nextjs.org/).
 * Semantic HTML
 * [h-resume](http://microformats.org/wiki/h-resume) microformat
 * Search Engine Optimised
-* Perfect Lighthouse score
+* Perfect Lighthouse scores
+* Supports Markdown
+* Printable
 
 ## Get started
 
@@ -28,4 +30,3 @@ npm i
 Deploy a fork of this template to Vercel.
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fr-freeman%2Fresume)
-

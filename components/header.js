@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import classNames from '../helpers';
+import {PrintButton} from '../components';
 
 export default function Header({author, links}) {
     return (
@@ -14,9 +15,13 @@ export default function Header({author, links}) {
                 <meta property="og:description" content={author.bio}/>
                 <meta property="og:image" content={`${author.photo.src}`}/>
             </Head>
-            <header className="h-card lg:flex justify-between mt-16">
+            <header
+                className="h-card lg:flex justify-between print:flex print:items-baseline mt-16 relative print:mt-0">
+                <div className="absolute right-0 top-20 lg:-top-10 inline-flex items-center">
+                    <PrintButton/>
+                </div>
                 <div className="lg:flex items-center">
-                    <div className="w-32 w-32 mr-8">
+                    <div className="w-32 w-32 mr-8 print:hidden">
                         <Image
                             {...author.photo}
                             width={256}
@@ -37,7 +42,7 @@ export default function Header({author, links}) {
                            href={link.href}
                            rel="noopener"
                            target="_blank"
-                           className={classNames(link.property, 'inline-flex lg:flex lg:flex-row-reverse items-center text-gray-500 hover:text-gray-900')}>
+                           className={classNames(link.property, 'inline-flex lg:flex lg:flex-row-reverse items-center print:inline-flex print:flex-row-reverse text-gray-500 hover:text-gray-900')}>
                             <link.icon className="w-6 h-6 lg:w-5 lg:h-5 mr-2 lg:ml-2 lg:mr-0"/>
                             <span className="sr-only lg:not-sr-only">{link.title}</span>
                         </a>
