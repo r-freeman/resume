@@ -14,7 +14,7 @@ export default function Education({educationData}) {
                         {' '}&middot;{' '}
                         <Datetime dateString={education.date_to}/>
                     </p>
-                    <h4 className="mt-2 font-serif italic">{education.degree}</h4>
+                    <h4 className="mt-2 font-serif italic print:mt-1">{education.degree}</h4>
                     <p className="mt-1">{education.award}</p>
                 </section>
             ))}
