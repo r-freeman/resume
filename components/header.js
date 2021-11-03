@@ -7,7 +7,7 @@ export default function Header({author, links}) {
     return (
         <>
             <Head>
-                <title>{author.name} &middot; {author.jobTitle}</title>
+                <title>{author.name} {author.jobTitle} {author.location}</title>
                 <link rel="icon" href="/favicon.ico"/>
                 <meta name="author" content={author.name}/>
                 <meta name="description" content={author.bio}/>
