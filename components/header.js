@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import classNames from '../helpers';
-import {PrintButton} from '../components';
+import {DownloadButton, PrintButton} from '../components';
 
 export default function Header({author, links}) {
     return (
@@ -17,8 +17,9 @@ export default function Header({author, links}) {
             </Head>
             <header
                 className="h-card lg:flex justify-between print:flex print:items-baseline mt-16 relative print:mt-0">
-                <div className="absolute right-0 top-20 lg:-top-10 inline-flex items-center">
+                <div className="absolute right-0 top-20 lg:-top-10 inline-flex items-center space-x-2">
                     <PrintButton/>
+                    <DownloadButton author={author}/>
                 </div>
                 <div className="lg:flex items-center">
                     <div className="w-32 w-32 mr-8 print:hidden">
