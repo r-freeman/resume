@@ -12,6 +12,7 @@ A fully customisable online resume created with [Next.js](https://nextjs.org/).
 * Search Engine Optimised
 * Perfect Lighthouse scores
 * Supports Markdown
+* Automatically Generates PDF
 * Printable
 
 ## Get started

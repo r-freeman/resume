@@ -2,17 +2,20 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
-    "start": "next start"
+    "build": "next build && npm run pdf",
+    "start": "next start",
+    "pdf": "concurrently -k \"npm run start\" \"sleep 5 && node ./scripts/generate-pdf.js\""
   },
   "dependencies": {
     "@fontsource/merriweather": "^4.5.1",
     "@fontsource/merriweather-sans": "^4.5.0",
     "@plaiceholder/next": "^2.1.0",
+    "concurrently": "^6.3.0",
     "date-fns": "^2.25.0",
     "gray-matter": "^4.0.3",
     "next": "latest",
     "plaiceholder": "^2.0.1",
+    "puppeteer": "^11.0.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "remark": "^13.0.0",

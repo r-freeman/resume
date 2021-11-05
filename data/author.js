@@ -6,13 +6,12 @@ import {
     GitHubIcon
 } from '../components/svg';
 
+import * as authorData from './author.json';
+
 export const author = {
-    name: "Ryan Freeman",
-    jobTitle: "Graduate Software Engineer",
-    bio: "Graduate software engineer with a passion for developing robust and scalable cloud-native web applications, working across the full-stack in a continuous integration environment.",
-    location: "Dublin, Ireland",
+    ...authorData,
     photo: "photo.png",
-};
+}
 
 export const links = [
     {
